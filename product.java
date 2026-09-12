@@ -26,7 +26,7 @@ public class product {
         tree[index] = tree[2*index+1] * tree[2*index+2];
     }
     public static int query(int index,int st,int ed,int i,int j) {
-        if(i > ed || j < st)
+        if(i > ed || j < st || i>0  )
             return 1;
         if(i<=st && ed<=j)
             return tree[index];
